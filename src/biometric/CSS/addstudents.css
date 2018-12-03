@@ -1,0 +1,53 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#stack{
+    -fx-background-image: url("list1.jpg");
+}
+
+#p1{
+    -fx-border-color: #000000;
+    -fx-border-width: 3px;
+}
+#p2{
+    -fx-border-color: #000000;
+    -fx-border-width: 3px;
+}
+#saveBtn{
+    -fx-background-color: #001749;
+}
+#scanBtn{
+    -fx-background-color: #001749;
+}
+#uploadBtn{
+    -fx-background-color: #001749;
+}
+#student_name{
+    -fx-prompt-text-fill: #000000;
+     -fx-text-fill: #000000;
+
+}
+#matno{
+    -fx-prompt-text-fill: #000000;
+    -fx-text-fill: #000000;
+}
+#selClass{
+     -fx-prompt-text-fill: #000000;
+}
+
+#selClass:odd{
+     -fx-background-color: #00022F;
+}
+
+#selClass:even{
+     -fx-background-color: #001749;
+}
+
+.jfx-hamburger StackPane{
+  -fx-background-color:#ffffff;
+  -fx-background-radius:5px;
+}
+#exitApp:hover{
+    -fx-fill:#ff0000;
+}

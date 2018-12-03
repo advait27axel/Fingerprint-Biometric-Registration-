@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" stylesheets="@../CSS/classlist.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biometric.attendance.ClassListControl">
+   <children>
+      <Pane fx:id="bacground" prefHeight="500.0" prefWidth="800.0" stylesheets="@../CSS/classlist.css">
+         <children>
+            <JFXListView fx:id="listView1" fixedCellSize="-2.0" layoutX="152.0" layoutY="70.0" opacity="0.57" prefHeight="361.0" prefWidth="515.0" verticalGap="5.0" />
+            <JFXButton fx:id="proceedBtn" buttonType="RAISED" layoutX="545.0" layoutY="448.0" onAction="#proceedToTakeAtt" opacity="0.72" prefHeight="38.0" prefWidth="204.0" ripplerFill="WHITE" text="Proceed " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Bloom threshold="0.41" />
+               </effect>
+            </JFXButton>
+            <Label layoutX="161.0" layoutY="33.0" prefHeight="29.0" prefWidth="374.0" text="Capture Finger Then Verify..." textFill="WHITE">
+               <font>
+                  <Font name="Monotype Corsiva" size="29.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="VerifyCapture" buttonType="RAISED" layoutX="161.0" layoutY="324.0" onAction="#VerifyCapture" opacity="0.72" prefHeight="38.0" prefWidth="204.0" ripplerFill="WHITE" text="capture" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Bloom threshold="0.41" />
+               </effect>
+            </JFXButton>
+         </children></Pane>
+      <Pane onMouseDragged="#draggable" onMousePressed="#draggable1" prefHeight="29.0" prefWidth="800.0" style="-fx-background-color: #001749;">
+         <children>
+            <JFXHamburger fx:id="navbarhambuger" layoutX="25.0" layoutY="-3.0" onMousePressed="#hamuger" prefHeight="38.0" prefWidth="51.0" />
+            <MaterialIconView fx:id="exitApp" fill="#529ff2" glyphName="HIGHLIGHT_OFF" layoutX="767.0" layoutY="27.0" onMousePressed="#exitAppl" size="25" wrappingWidth="13.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="230.0" layoutY="29.0" prefHeight="471.0" prefWidth="204.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXDrawer>
+      <VBox fx:id="smallNavbar" layoutX="-7.0" layoutY="29.0" prefHeight="471.0" prefWidth="51.0" spacing="4.0" style="-fx-background-color: #001749;" stylesheets="@../CSS/smallnavabar.css">
+         <children>
+            <JFXButton fx:id="nClass" contentDisplay="GRAPHIC_ONLY" onAction="#addClass" prefHeight="65.0" prefWidth="76.0">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE_PLUS" size="25" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="nStudent" contentDisplay="GRAPHIC_ONLY" onAction="#addStudentBtn" prefHeight="65.0" prefWidth="76.0">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_PLUS" size="25" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="nAttend" contentDisplay="GRAPHIC_ONLY" onAction="#takeAttendenceBtn" prefHeight="65.0" prefWidth="76.0">
+               <graphic>
+                  <Icons525View fill="WHITE" glyphName="FINGERPRINT" size="25" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="nStats" contentDisplay="GRAPHIC_ONLY" prefHeight="65.0" prefWidth="76.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="LINE_CHART" size="25" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="nLgout" contentDisplay="GRAPHIC_ONLY" prefHeight="65.0" prefWidth="52.0">
+               <graphic>
+                  <OctIconView fill="WHITE" glyphName="SIGN_OUT" size="25" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

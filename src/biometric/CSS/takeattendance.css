@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#bacground{
+    -fx-background-image: url("CL.jpg");
+}
+#exitAppl:hover{
+    -fx-fill:#ff0000;
+}
+.jfx-hamburger StackPane{
+  -fx-background-color:#ffffff;
+  -fx-background-radius:5px;
+}
+#p1{
+  -fx-border-color: #ffffff;
+  -fx-border-width:2px; 
+}
+#p2{
+  -fx-border-color: #ffffff;
+  -fx-border-width:2px; 
+}
+#newBtn{
+    -fx-background-color:#ff0000;
+}
+#S_name{
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+}
+#S_matricno{
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+}

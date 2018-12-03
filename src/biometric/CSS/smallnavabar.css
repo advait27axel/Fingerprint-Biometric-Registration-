@@ -1,0 +1,26 @@
+
+/* 
+    Created on : Dec 20, 2017, 5:17:14 AM
+    Author     : Ekunola John
+*/
+
+#nClass:hover{
+    -fx-background-color: #003366;
+    -fx-background-radius: 0;
+}
+#nStudent:hover{
+    -fx-background-color: #003366;
+    -fx-background-radius: 0;
+}
+#nAttend:hover{
+    -fx-background-color: #003366;
+    -fx-background-radius: 0;
+}
+#nStats:hover{
+     -fx-background-color: #003366;
+     -fx-background-radius: 0;
+}
+#nLgout:hover{
+    -fx-background-color: #003366;
+    -fx-background-radius: 0;
+}

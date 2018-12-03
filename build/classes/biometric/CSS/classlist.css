@@ -1,0 +1,88 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#bacground{
+    -fx-background-image: url("CL.jpg");
+}
+#exitApp:hover{
+    -fx-fill:#ff0000;
+}
+.jfx-hamburger StackPane{
+  -fx-background-color:#ffffff;
+  -fx-background-radius:5px;
+}
+#listView1{
+    -fx-border-width: 1px;
+    -fx-background-radius:0.5em;
+    -fx-border-color: #ffffff;
+    /*-fx-background-color: #0033cc;*/
+    -fx-background-color: #ffffff;
+}
+#proceedBtn{
+    -fx-background-color: #001749;
+}
+#listView1 .list-cell:even{
+    -fx-background-color: #00022F;
+    -fx-text-fill: #ffffff;
+}
+#listView1 .list-cell:odd{
+    -fx-background-color: #001749;
+    -fx-text-fill: #ffffff;
+}
+
+#listView1 .list-cell:selected{
+    -fx-background-color:linear-gradient(#328BDB 0% ,#207BCF 25%, #1973C9 75%, #0A6B5F 100%);
+    -fx-text-fill: #66ffff;
+}
+
+
+#listView1 .scroll-bar{
+-fx-background-color: rgb(96,96,96);
+-fx-background-radius: 2em;
+}
+
+#listView1 .scroll-bar:horizontal .track{
+-fx-background-color: transparent;
+-fx-background-radius: 2em;
+-fx-padding: 5;
+}
+ #listView1.scroll-bar:horizontal .track-background{
+    -fx-background-color:transparent;
+    -fx-background-insets:0;
+    -fx-background-radius: 2em;
+}
+#listView1 .scroll-bar:horizontal .thumb{
+    -fx-background-color:rgb(211,211,211);
+    -fx-background-insets:4 0 4 0;
+    -fx-background-radius: 2em;
+}
+
+#listView1 .scroll-bar:horizontal .thumb:hover{
+-fx-background-color: rgb(231,231,231);
+}
+#listView1 .scroll-bar:horizontal .thumb:pressed{
+-fx-background-color: rgb(255,255,255);
+}
+#listView1 .scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button{
+-fx-background-color:transparent;
+-fx-background-radius: 2em;
+-fx-padding: 5;
+}
+#listView1 .scroll-bar:horizontal .increment-arrow {
+-fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+-fx-background-color: rgb(211,211,211);
+-fx-padding: 0.25em;
+-fx-rotate: -90;
+}
+
+#listView1 .scroll-bar:horizontal .decrement-arrow {
+-fx-background-color: rgb(211,211,211);
+-fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+-fx-padding: 0.25em;
+-fx-rotate: 90;
+}
+
+#listView1 .scroll-bar:horizontal:focused {
+-fx-background-color: transparent,rgb(96,96,96);
+}

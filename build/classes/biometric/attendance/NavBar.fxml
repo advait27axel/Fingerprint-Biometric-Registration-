@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="NavbarOptions" prefHeight="500.0" prefWidth="260.0" spacing="5.0" style="-fx-background-color: #001749;" stylesheets="@navbar.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biometric.attendance.NavBarControl">
+   <children>
+      <ImageView fitHeight="157.0" fitWidth="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@nvbarimg.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="addClassBtn" alignment="BASELINE_LEFT" contentDisplay="RIGHT" ellipsisString="" graphicTextGap="100.0" onAction="#addClass" prefHeight="66.0" prefWidth="263.0" text="ADD CLASS     " textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <graphic>
+            <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE_PLUS" size="30" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="addStudentBtn" alignment="BASELINE_LEFT" contentDisplay="RIGHT" graphicTextGap="95.0" onAction="#addStudentBtn" prefHeight="66.0" prefWidth="262.0" text="ADD STUDENTS" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <graphic>
+            <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_PLUS" size="30" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="attndanceBtn" alignment="BASELINE_LEFT" contentDisplay="RIGHT" graphicTextGap="80.0" onAction="#takeAttendenceBtn" prefHeight="68.0" prefWidth="260.0" text="TAKE ATTENDANCE" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <graphic>
+            <Icons525View fill="WHITE" glyphName="FINGERPRINT" size="30" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="statisticsBtn" alignment="BASELINE_LEFT" contentDisplay="RIGHT" ellipsisString="" graphicTextGap="120.0" prefHeight="57.0" prefWidth="264.0" text="STATISTICS " textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="LINE_CHART" size="30" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="logoutBtn" alignment="BASELINE_LEFT" contentDisplay="RIGHT" graphicTextGap="115.0" prefHeight="62.0" prefWidth="263.0" text="LOGOUT         " textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="13.0" />
+         </font>
+         <graphic>
+            <OctIconView fill="WHITE" glyphName="SIGN_OUT" size="30" />
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

@@ -1,0 +1,36 @@
+
+
+#addclbg{
+    -fx-background-image: url("classbg1.jpg");
+}
+
+#classformbg{
+   -fx-background-color: #ffffff;
+   -fx-background-radius: 20;
+}
+#createClassBtn{
+    -fx-background-color: #0033cc;
+}
+
+#endepartmment{
+    -fx-prompt-text-fill:#e21805;
+}
+#endepartmment1{
+    -fx-prompt-text-fill:#e21805;
+}
+#endepartmment11{
+    -fx-prompt-text-fill:#e21805;
+}
+#endepartmment111{
+    -fx-prompt-text-fill:#e21805;
+}
+#exitApp:hover{
+    -fx-fill:#ff0000;
+}
+.jfx-hamburger StackPane{
+  -fx-background-color:#ffffff;
+  -fx-background-radius:5px;
+}
+#sidebarContent{
+   -fx-background-color: #0033cc; 
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biometric.attendance.AddStudentsControl">
+    <stylesheets>
+        <URL value="@/biometric/CSS/addstudents.css" />
+    </stylesheets>
+   <children>
+      <Pane fx:id="stack" onMouseDragged="#draggable" onMousePressed="#draggable1" prefHeight="603.0" prefWidth="800.0" stylesheets="@../CSS/addstudents.css">
+         <children>
+            <Pane fx:id="formBg" layoutX="165.0" layoutY="27.0" opacity="0.55" prefHeight="566.0" prefWidth="527.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <JFXTextField fx:id="student_name" focusColor="#d00000" labelFloat="true" layoutX="22.0" layoutY="21.0" prefHeight="25.0" prefWidth="435.0" promptText="Sub Agent Name" unFocusColor="BLACK">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="matno" focusColor="#d00000" labelFloat="true" layoutX="22.0" layoutY="70.0" prefHeight="25.0" prefWidth="435.0" promptText="Agency Number" unFocusColor="BLACK">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <HBox alignment="CENTER" layoutX="22.0" layoutY="277.0" prefHeight="158.0" prefWidth="411.0" spacing="10.0">
+                     <children>
+                        <Pane fx:id="p1" prefHeight="132.0" prefWidth="160.0">
+                           <children>
+                              <ImageView fx:id="Pics" fitHeight="116.0" fitWidth="130.0" layoutX="22.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <viewport>
+                                    <Rectangle2D height="200.0" width="200.0" />
+                                 </viewport>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="p2" prefHeight="136.0" prefWidth="144.0">
+                           <children>
+                              <ImageView fitHeight="103.0" fitWidth="116.0" layoutX="15.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <viewport>
+                                    <Rectangle2D height="200.0" width="200.0" />
+                                 </viewport>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <JFXButton fx:id="uploadBtn" buttonType="RAISED" layoutX="70.0" layoutY="447.0" onAction="#uploadPictures" prefHeight="29.0" prefWidth="130.0" ripplerFill="#00da2b" text="UPLOAD" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="scanBtn" buttonType="RAISED" layoutX="255.0" layoutY="447.0" onAction="#scanBtn" prefHeight="29.0" prefWidth="130.0" ripplerFill="#00da2b" text="SCAN" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="saveBtn" buttonType="RAISED" graphicTextGap="10.0" layoutX="320.0" layoutY="494.0" onAction="#saveStudent" prefHeight="44.0" prefWidth="137.0" ripplerFill="#da0000" text="SAVE" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="18.0" />
+                     </font>
+                     <graphic>
+                        <Icons525View fill="WHITE" glyphName="SAVE" size="20" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXComboBox fx:id="selClass" focusColor="#d00000" layoutX="22.0" layoutY="114.0" onAction="#getSelectedClass" prefHeight="25.0" prefWidth="435.0" promptText="Select Agency" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="TerminalNumber" focusColor="#d00000" labelFloat="true" layoutX="16.0" layoutY="157.0" prefHeight="31.0" prefWidth="447.0" promptText="Terminal Number" unFocusColor="BLACK">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane layoutY="-2.0" onMouseDragged="#draggable" onMousePressed="#draggable1" prefHeight="29.0" prefWidth="800.0" style="-fx-background-color: #001749;">
+               <children>
+                  <JFXHamburger fx:id="navbarhambuger" layoutX="25.0" layoutY="-3.0" onMousePressed="#hamuger" prefHeight="38.0" prefWidth="51.0" />
+                  <MaterialIconView fx:id="exitApp" fill="#529ff2" glyphName="HIGHLIGHT_OFF" layoutX="767.0" layoutY="27.0" onMousePressed="#exitAppl" size="25" wrappingWidth="13.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="230.0" layoutX="-1.0" layoutY="27.0" prefHeight="474.0" prefWidth="204.0">
+               <effect>
+                  <DropShadow />
+               </effect></JFXDrawer>
+         </children></Pane>
+      <VBox fx:id="smallNavbar" layoutY="27.0" prefHeight="472.0" prefWidth="51.0" spacing="4.0" style="-fx-background-color: #001749;" stylesheets="@../CSS/smallnavabar.css">
+         <children>
+            <JFXButton fx:id="nClass" contentDisplay="GRAPHIC_ONLY" onAction="#addClass" prefHeight="65.0" prefWidth="76.0">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE_PLUS" size="25" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="nStudent" contentDisplay="GRAPHIC_ONLY" onAction="#addStudentBtn" prefHeight="65.0" prefWidth="76.0">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_PLUS" size="25" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="nAttend" contentDisplay="GRAPHIC_ONLY" onAction="#takeAttendenceBtn" prefHeight="65.0" prefWidth="76.0">
+               <graphic>
+                  <Icons525View fill="WHITE" glyphName="FINGERPRINT" size="25" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="nStats" contentDisplay="GRAPHIC_ONLY" prefHeight="65.0" prefWidth="76.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="LINE_CHART" size="25" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="nLgout" contentDisplay="GRAPHIC_ONLY" prefHeight="65.0" prefWidth="52.0">
+               <graphic>
+                  <OctIconView fill="WHITE" glyphName="SIGN_OUT" size="25" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

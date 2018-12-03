@@ -1,0 +1,14 @@
+
+
+#adminbg{
+    -fx-background-color:#00cccc;
+}
+
+#Loginbtn{
+    -fx-background-color: #0033cc;
+}
+
+#loginArea{
+    -fx-background-radius: 10;
+    -fx-background-color: #ffffff;
+}

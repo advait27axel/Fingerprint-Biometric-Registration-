@@ -1,0 +1,44 @@
+
+
+
+#stack{
+    -fx-background-image: url("mainpg-bg.jpg");
+}
+
+#addclassbtn{
+    -fx-background-color: #00022F;
+}
+
+#addclassbtn:hover{
+    -fx-background-color: #001749;
+}
+
+#addstudentbn{
+    -fx-background-color: #00022F;
+}
+
+#addstudentbn:hover{
+    -fx-background-color: #001749;
+}
+
+#takeattendance{
+    -fx-background-color: #00022F;
+}
+
+#takeattendance:hover{
+    -fx-background-color: #001749;
+}
+#viewreport{
+    -fx-background-color: #00022F;
+}
+
+#viewreport:hover{
+    -fx-background-color: #001749;
+}
+#exitApp:hover{
+    -fx-fill:#ff0000;
+}
+.jfx-hamburger StackPane{
+  -fx-background-color:#ffffff;
+  -fx-background-radius:5px;
+}

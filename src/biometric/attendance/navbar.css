@@ -1,0 +1,24 @@
+
+#NavbarOptions{
+    -fx-background-color: #001749;
+}
+#addClassBtn:hover{
+    -fx-background-color: #0033cc;
+    -fx-background-radius: 0;
+}
+#addStudentBtn:hover{
+    -fx-background-color: #0033cc;
+    -fx-background-radius: 0;
+}
+#attndanceBtn:hover{
+    -fx-background-color: #0033cc;
+    -fx-background-radius: 0;
+}
+#statisticsBtn:hover{
+     -fx-background-color: #0033cc;
+     -fx-background-radius: 0;
+}
+#logoutBtn:hover{
+    -fx-background-color: #0033cc;
+    -fx-background-radius: 0;
+}
